@@ -6,13 +6,19 @@ struct Decoder {
 	r io.Reader
 }
 
+struct Metadata {
+	ok int
+	new string
+	options []string 
+}
+
 fn new_decoder(r io.Reader) *Decoder {
   mut dec := Decoder{r: r}
   return dec
 }
 
 pub fn (d *Decoder) decode(out interface{})  {
-
+//TODO
 }
 
 
